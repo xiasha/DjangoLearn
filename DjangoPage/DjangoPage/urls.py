@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.view_index, name = 'index'),
     path('poll', include('polls.urls')),
-    path('page1', views.view_page1),
+    # path('page/<int:page>', views.xxx),
+    path('page/<int:pg>', views.view_page),
 ]
